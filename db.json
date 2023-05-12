@@ -646,7 +646,11 @@
     {
       "Roomid": "102",
       "Status": "Available",
-      "Current Tenants": [],
+      "Current Tenants": [
+        "Siddu",
+        "Sam",
+        "Surya"
+      ],
       "Old Tenants": [
         "Arun",
         "Varun",
@@ -656,7 +660,7 @@
     },
     {
       "RoomId": "101",
-      "Status": "avail",
+      "Status": "Available",
       "CurrentTenants": "jagan,pk,cbn,kcr",
       "id": 3
     }
@@ -685,6 +689,24 @@
         "argdwfdger,refabfdb,rbeabreb,beabareb"
       ],
       "id": 3
+    }
+  ],
+  "Rooms": [
+    {
+      "RoomNo": 101,
+      "Floor": "FirstFloor",
+      "id": 1
+    },
+    {
+      "RoomNo": "201",
+      "Floor": "SecondFloor",
+      "id": 2
+    }
+  ],
+  "Admin": [
+    {
+      "Username": "Mahadevan",
+      "Password": "Mahadevan@123"
     }
   ],
   "Signup": [

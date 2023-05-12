@@ -17,11 +17,9 @@ const Overview = () => {
 
   useEffect(() => {
     axios.get(`http://localhost:4000/Hostels?id=${id}`).then((res) => {
-      // console.log(res.data);
-      // console.log([...res.data])
       setBooking([...res.data]);
     });
-  });
+  },[]);
   // console.log(booking)
   return (
     <div>

@@ -14,8 +14,7 @@ const [current,setCurrent]= useState('');
         url: 'http://localhost:4000/Beds',
         data:{
            "RoomId": newRoom,
-           "Status": status,
-           "CurrentTenants": current
+           "Status": status
         } 
       }).then(()=>{
         alert("ADDED !")
@@ -38,8 +37,8 @@ const [current,setCurrent]= useState('');
             <div className="mt-2">
               
             </div>
-            <label htmlFor="">Current Tenants</label>
-            <input type="text" onChange={(z)=>{setCurrent(z.target.value)}} required className='form-control'/>
+            {/* <label htmlFor="">Current Tenants</label>
+            <input type="text" onChange={(z)=>{setCurrent(z.target.value)}} required className='form-control'/> */}
             <div className="d-flex justify-content-center">
             <button onClick={NewBed} className="btn btn-outline-info mt-2">Add Bed</button>
             </div>

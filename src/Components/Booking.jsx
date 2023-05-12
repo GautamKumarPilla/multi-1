@@ -54,7 +54,7 @@ const Booking = () => {
   }
 
   return (
-    Login && (
+    Login.status===true ? (
       <div className="d-flex flex-wrap justify-content-center">
         <div className="">
           <div id="liveAlertPlaceholder"></div>
@@ -180,7 +180,7 @@ const Booking = () => {
           </div>
         </div>
       </div>
-    )
+    ) : <h4 className="d-flex justify-content-center">Please <a href="/login">login</a> to continue with booking</h4>
   );
 };
 

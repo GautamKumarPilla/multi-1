@@ -6,11 +6,11 @@ import './Hostel.css';
 const Hostel = () => {
   const [data, setData] = useState([]);
   var navigate = useNavigate();
-  useEffect(()=>{
-     axios('http://localhost:4000/Beds').then((response)=>{
-       console.log(response.data)
-     })
-  },[])
+  // useEffect(()=>{
+  //    axios.get('http://localhost:4000/Beds').then((response)=>{
+  //      console.log(response.data)
+  //    })
+  // },[data])
   const searchHandler=()=>{
     console.log(data);
     setData('');
@@ -38,9 +38,9 @@ const Hostel = () => {
         <br />
     </div>
     <div className='d-flex w-75 ms-auto'>
-      <button className='btn btn-outline-success' id='gojo' onClick={()=>navigate('/AddRoom')}>ADD ROOM</button>&nbsp;&nbsp;&nbsp;
-      <button className='btn btn-outline-success' id='gojo' onClick={()=>{navigate('/AddBed')}}>ADD BED</button>&nbsp;&nbsp;&nbsp;
-      <button className='btn btn-outline-success' id='gojo' onClick={()=>{navigate('/AddTenant')}}>ADD TENANT</button>
+      <button className='btn btn-outline-success' onClick={()=>navigate('/AddRoom')}>ADD ROOM</button>&nbsp;&nbsp;&nbsp;
+      <button className='btn btn-outline-success' onClick={()=>{navigate('/AddBed')}}>ADD BED</button>&nbsp;&nbsp;&nbsp;
+      <button className='btn btn-outline-success' onClick={()=>{navigate('/AddTenant')}}>APPROVE TENANT</button>
     </div>
     </div>
     </div>
