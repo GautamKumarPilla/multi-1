@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
   const [booking, setBooking] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(""); 
   const [select, setSelect] = useState("");
   var teleport = useNavigate();
 
@@ -54,8 +54,8 @@ const Booking = () => {
   }
 
   return (
-    Login.status===true ? (
-      <div className="d-flex flex-wrap justify-content-center">
+   
+      <div className="justify-content-center">
         <div className="">
           <div id="liveAlertPlaceholder"></div>
           <div className="d-flex flex-wrap bg-warning px-3 py-2 align-items-center position-fixed top-0 w-100">
@@ -180,7 +180,7 @@ const Booking = () => {
           </div>
         </div>
       </div>
-    ) : <h4 className="d-flex justify-content-center">Please <a href="/login">login</a> to continue with booking</h4>
+    
   );
 };
 

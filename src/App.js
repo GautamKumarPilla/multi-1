@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import Login from "./Components/Login";
 import { Provider } from "react-redux";
 import store from "./store/store";
+import Auth from "./Auth";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           <Outlet></Outlet>
         </div>
     </Provider>
+    <div>
+      <Auth></Auth>
+    </div>
     </div>
   );
 }

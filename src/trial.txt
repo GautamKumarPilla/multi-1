@@ -1,0 +1,2 @@
+ Login.status===true ? (
+    ) : <h4 className="d-flex justify-content-center">Please <a href="/login">login</a> to continue with booking</h4>

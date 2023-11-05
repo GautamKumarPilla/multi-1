@@ -16,6 +16,9 @@ const Submit=()=>{
             alert("Signup Successful!")
         });
     }
+const Auth=(e)=>{
+   setNewUser(e.target.value)
+}    
 
     return(
         <div className="bg-sign">
@@ -99,7 +102,8 @@ const Submit=()=>{
                         }
                     }
                 </Formik>
-            </div>            
+            </div>
+            <a onClick={Auth}>Signup with google</a>            
         </div>
     </div>
     )
